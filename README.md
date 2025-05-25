@@ -1,6 +1,6 @@
 # Panduan Vibe Coding Indonesia V1.0
 
-**Penulis Konsep:** [Nama Anda] (Terinspirasi oleh Nicolas Zullo & Alur Kerja Proyek ModernKataKupas)
+**Penulis Konsep:** Mukhlis Amien (Terinspirasi oleh Nicolas Zullo & Alur Kerja Proyek ModernKataKupas)
 **Tanggal Pembuatan:** 25 Mei 2025
 **Tujuan:** Membangun perangkat lunak berkualitas tinggi secara efisien dengan perencanaan terstruktur, kolaborasi manusia-AI yang jelas, dan iterasi cepat.
 
