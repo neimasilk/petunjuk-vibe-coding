@@ -185,12 +185,25 @@ Jika semua tes berhasil:
 
 Simpan pekerjaan Anda dengan pesan yang jelas.
 
+⚠️ **PENTING untuk Pemula:** Jangan lupa menggunakan tanda petik (") untuk membungkus pesan commit!
+
+**Format yang Benar:**
+```bash
+git commit -m "Pesan commit Anda di sini"
+```
+
 **Contoh Pesan Commit:**
 
+```bash
+git commit -m "Feat: Implementasi struktur dasar halaman utama"
 ```
-Feat: Implementasi struktur dasar halaman utama
+
+**Pesan commit yang lebih detail:**
+```bash
+git commit -m "Feat: Implementasi struktur dasar halaman utama
+
 - Selesai baby-step yang diarsip di: baby-step-halaman-utama-20250616.md
-- Dampak utama pada file: index.html
+- Dampak utama pada file: index.html"
 ```
 
 **Ulangi Siklus:** Kembali ke Langkah 2.1 untuk memulai fitur kecil berikutnya.
@@ -239,6 +252,9 @@ Feat: Implementasi struktur dasar halaman utama
 
 ### ❌ **"Tes gagal terus"**
 **Solusi:** Periksa kembali kriteria tes. Mungkin terlalu rumit atau tidak jelas. Simplifikasi kriteria tes.
+
+### ❌ **"Git commit error: pathspec did not match any file"**
+**Solusi:** Anda lupa menggunakan tanda petik (") untuk pesan commit. Gunakan format: `git commit -m "pesan Anda"`
 
 -----
 
