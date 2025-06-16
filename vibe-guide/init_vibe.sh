@@ -30,11 +30,17 @@ fi
 
 # Inisialisasi awal
 echo "🚀 Inisialisasi Proyek Vibe Coding v1.4 (Edisi Hibrida)..."
-mkdir -p memory-bank baby-steps-archive src vibe-guide
+mkdir -p memory-bank baby-steps-archive src
 
 # Buat file jika belum ada
 touch memory-bank/{spesifikasi-produk,architecture,progress}.md
 touch vibe-guide/team-manifest.md
+
+# Pastikan VIBE_CODING_GUIDE.md ada
+if [ ! -f "vibe-guide/VIBE_CODING_GUIDE.md" ]; then
+    echo "⚠️  File vibe-guide/VIBE_CODING_GUIDE.md tidak ditemukan!"
+    echo "   Pastikan Anda telah menyalin folder vibe-guide/ dengan lengkap."
+fi
 
 # Buat template jika belum ada
 if [ ! -f "vibe-guide/template-papan.md" ]; then
@@ -58,5 +64,17 @@ fi
 
 cp vibe-guide/template-papan.md memory-bank/papan-proyek.md
 
-echo "✅ Struktur folder dan file berhasil dibuat."
-echo "➡️ Langkah selanjutnya: Daftarkan tim Anda di 'vibe-guide/team-manifest.md'"
+echo "✅ Struktur workspace berhasil dibuat."
+echo "📂 Struktur workspace Anda:"
+echo "   my-project/"
+echo "   ├── vibe-guide/               # Folder khusus panduan"
+echo "   │   ├── VIBE_CODING_GUIDE.md   # Panduan utama"
+echo "   │   ├── template-papan.md      # Template terstandarisasi"
+echo "   │   └── init_vibe.sh           # Script setup otomatis"
+echo "   ├── memory-bank/              # Konteks aktif"
+echo "   ├── baby-steps-archive/       # Riwayat pekerjaan"
+echo "   └── src/                      # Kode aplikasi"
+echo ""
+echo "➡️ Langkah selanjutnya:"
+echo "   1. Baca panduan: vibe-guide/VIBE_CODING_GUIDE.md"
+echo "   2. Daftarkan tim: vibe-guide/team-manifest.md"

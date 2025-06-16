@@ -25,23 +25,27 @@ Vibe Coding adalah pendekatan pengembangan perangkat lunak di mana **Manusia dan
 - **Git Commit oleh AI**: AI melakukan commit atas nama mereka sendiri
 - **Panduan Terintegrasi**: Semua materi dalam satu folder `vibe-guide/`
 
-## 📂 Struktur Proyek
+## 📂 Struktur Workspace
 
 Setelah inisialisasi, proyek Anda akan memiliki struktur:
 
 ```
-proyek-anda/
-├── vibe-guide/           # Panduan dan tools (salin dari repositori ini)
-│   ├── init_vibe.sh
-│   ├── template-papan.md
-│   └── team-manifest.md
-├── memory-bank/          # Konteks aktif proyek (dibuat otomatis)
+my-project/
+├── vibe-guide/               # Folder khusus panduan
+│   ├── VIBE_CODING_GUIDE.md   # Panduan utama
+│   ├── template-papan.md      # Template terstandarisasi
+│   └── init_vibe.sh           # Script setup otomatis
+│
+├── memory-bank/              # Konteks aktif
 │   ├── spesifikasi-produk.md
-│   ├── papan-proyek.md
+│   ├── papan-proyek.md       # Reset tiap iterasi
 │   ├── architecture.md
 │   └── progress.md
-├── baby-steps-archive/   # Riwayat pekerjaan (dibuat otomatis)
-└── src/                  # Kode aplikasi Anda
+│
+├── baby-steps-archive/       # Riwayat pekerjaan
+│   └── baby-step-*.md        # Arsip per langkah
+│
+└── src/                      # Kode aplikasi
 ```
 
 ## 🔄 Alur Kerja Singkat
@@ -55,9 +59,10 @@ proyek-anda/
 
 ## 📖 Dokumentasi
 
+- **[📚 Panduan Utama](./vibe-guide/VIBE_CODING_GUIDE.md)** - Panduan lengkap V1.4 (dalam workspace)
 - **[⚡ Instalasi](./INSTALASI.md)** - Cara mendapatkan dan setup Vibe Coding
 - **[📋 Panduan Singkat](./PANDUAN_SINGKAT.md)** - Konsep dasar & alur kerja
-- **[📚 Panduan Lengkap V1.4](./PANDUAN_V1.4.md)** - Dokumentasi detail & contoh
+- **[📚 Panduan Lengkap V1.4](./PANDUAN_V1.4.md)** - Dokumentasi detail & contoh (arsip)
 
 ## 🤝 Kontribusi
 

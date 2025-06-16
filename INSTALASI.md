@@ -44,23 +44,25 @@ nano vibe-guide/team-manifest.md
 code vibe-guide/team-manifest.md
 ```
 
-## 📁 Struktur Setelah Instalasi
+## 📁 Struktur Workspace Setelah Instalasi
 
 Setelah menjalankan `init_vibe.sh`, proyek Anda akan memiliki:
 
 ```
-proyek-anda/
-├── vibe-guide/           # Tools dan template
-│   ├── init_vibe.sh      # Skrip inisialisasi/reset
-│   ├── template-papan.md # Template papan proyek
-│   └── team-manifest.md  # Daftar anggota tim
-├── memory-bank/          # Konteks aktif (dibuat otomatis)
+my-project/
+├── vibe-guide/               # Folder khusus panduan
+│   ├── VIBE_CODING_GUIDE.md   # Panduan utama
+│   ├── template-papan.md      # Template terstandarisasi
+│   ├── init_vibe.sh           # Script setup otomatis
+│   └── team-manifest.md       # Daftar anggota tim
+├── memory-bank/              # Konteks aktif (dibuat otomatis)
 │   ├── spesifikasi-produk.md
-│   ├── papan-proyek.md
+│   ├── papan-proyek.md       # Reset tiap iterasi
 │   ├── architecture.md
 │   └── progress.md
-├── baby-steps-archive/   # Riwayat pekerjaan (dibuat otomatis)
-└── src/                  # Kode aplikasi Anda (dibuat otomatis)
+├── baby-steps-archive/       # Riwayat pekerjaan (dibuat otomatis)
+│   └── baby-step-*.md        # Arsip per langkah
+└── src/                      # Kode aplikasi Anda (dibuat otomatis)
 ```
 
 ## ✅ Verifikasi Instalasi
