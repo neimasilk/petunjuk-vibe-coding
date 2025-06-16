@@ -27,10 +27,9 @@ graph TD
 
     subgraph B [vibe-guide/]
         direction LR
-        B1[VIBE_CODING_GUIDE.md]
-        B2[init_vibe.sh]
-        B3[template-papan.md]
-        B4[team-manifest.md]
+        B1[init_vibe.sh]
+        B2[template-papan.md]
+        B3[team-manifest.md]
     end
 
     subgraph C [memory-bank/]
@@ -58,7 +57,9 @@ graph TD
 ## 🚀 Tahap 0: Pengaturan Proyek Hibrida
 
 ### Langkah 0.1: Inisialisasi Proyek dengan Skrip
-Cukup jalankan satu perintah ini dari root folder proyek Anda. Skrip akan menyiapkan seluruh struktur yang diperlukan.
+
+1. **Salin folder `vibe-guide/`** dari repositori Vibe Coding ke root folder proyek Anda
+2. **Jalankan skrip inisialisasi** untuk menyiapkan seluruh struktur yang diperlukan:
 
 ```bash
 # Berikan izin eksekusi dan jalankan skrip
@@ -83,7 +84,7 @@ Buka file `vibe-guide/team-manifest.md` dan daftarkan semua anggota tim, baik ma
 ### Langkah 0.3: Buat Spesifikasi Produk (Sama seperti v1.3.3)
 Gunakan AI untuk membantu Anda merancang spesifikasi awal berdasarkan ide proyek.
 
-**Prompt untuk Gemini:**
+**Prompt untuk AI (Gemini/Claude/ChatGPT):**
 ```prompt
 Saya akan melakukan vibe coding. Berdasarkan ide proyek ini, tolong bantu saya membuat draf awal untuk file `memory-bank/spesifikasi-produk.md`. Isinya harus mencakup:
 1. Visi & Fitur Utama.
@@ -102,7 +103,7 @@ Ini adalah siklus inti yang akan terus diulang oleh tim hibrida Anda.
 ### Langkah 1.1: Perencanaan & Penugasan (`papan-proyek.md`)
 Arsitek (biasanya manusia) merencanakan *baby-step* berikutnya dan **mengisi kolom `Assignee`** untuk setiap tugas di `memory-bank/papan-proyek.md`.
 
-**Prompt untuk Gemini (Membantu Perencanaan):**
+**Prompt untuk AI (Membantu Perencanaan):**
 ```prompt
 Baca semua file di `memory-bank/` dan `vibe-guide/team-manifest.md`. Tugasmu adalah memperbarui `memory-bank/papan-proyek.md` dengan:
 1.  **Status:** Ringkasan progres terakhir dari `progress.md`.

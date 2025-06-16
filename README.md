@@ -1,108 +1,68 @@
-# Panduan Vibe Coding Indonesia V1.3.1 (Edisi Ramah Pemula)
+# Petunjuk Vibe Coding Indonesia V1.4
 
-**Selamat datang di Vibe Coding!** Panduan ini dirancang khusus untuk programmer pemula yang ingin membangun perangkat lunak berkualitas dengan bantuan AI.
+**Metodologi pengembangan perangkat lunak kolaboratif antara Manusia dan AI**
 
-**Perubahan Utama di V1.3.3:**
-1. **Struktur Folder Terpisah:** Memisahkan konteks aktif (`memory-bank`) dari riwayat pekerjaan (`baby-steps-archive`)
-2. **Alur Kerja Otomatis:** Template dan perintah terminal untuk konsistensi dan efisiensi
-3. **Checkpoint Integrasi:** Langkah baru untuk memastikan semua fitur bekerja sama dengan baik
-4. **Visualisasi Alur:** Diagram untuk mempermudah pemahaman proses
-5. **Tips & Contoh Lanjutan:** Format commit yang lebih baik dan prompt debugging yang efektif
+Vibe Coding adalah pendekatan pengembangan perangkat lunak di mana **Manusia dan AI bekerja sebagai tim hibrida yang setara**. Setiap anggota tim memiliki tanggung jawab jelas dan berkontribusi langsung ke basis kode.
 
-## Filosofi Inti (Tetap)
-1. **Manusia sebagai Arsitek Utama**
-2. **Konteks adalah Kunci**
-3. **Iterasi dengan "Baby Steps"**
-4. **Tes Berkelanjutan**
-5. **Dokumentasi Hidup**
+## 🚀 Mulai Cepat
 
-📖 **[Baca Panduan Lengkap V1.3.3](./panduan-vibe-coding-v1.3.3.md)**
+1. **[Download/Clone repositori ini](./INSTALASI.md#-cara-mendapatkan-vibe-coding)**
+2. **Salin folder `vibe-guide/` ke proyek Anda**
+3. **Jalankan setup:**
+   ```bash
+   chmod +x vibe-guide/init_vibe.sh
+   ./vibe-guide/init_vibe.sh
+   ```
+4. **Mulai coding:** Baca [Panduan Singkat](./PANDUAN_SINGKAT.md)
 
-## Struktur Folder Proyek V1.3.3
+> **Detail lengkap:** Lihat [Panduan Instalasi](./INSTALASI.md)
+
+## 🌟 Fitur Utama V1.4
+
+- **Tim Hibrida**: AI sebagai pengembang resmi dengan tanggung jawab tercatat
+- **Tugas Teralokasi**: Setiap tugas memiliki assignee yang jelas (manusia atau AI)
+- **Otomatisasi Penuh**: Skrip untuk setup dan reset alur kerja
+- **Git Commit oleh AI**: AI melakukan commit atas nama mereka sendiri
+- **Panduan Terintegrasi**: Semua materi dalam satu folder `vibe-guide/`
+
+## 📂 Struktur Proyek
+
+Setelah inisialisasi, proyek Anda akan memiliki struktur:
+
 ```
-proyek/
-├── memory-bank/                # Konteks aktif
+proyek-anda/
+├── vibe-guide/           # Panduan dan tools (salin dari repositori ini)
+│   ├── init_vibe.sh
+│   ├── template-papan.md
+│   └── team-manifest.md
+├── memory-bank/          # Konteks aktif proyek (dibuat otomatis)
 │   ├── spesifikasi-produk.md
 │   ├── papan-proyek.md
 │   ├── architecture.md
 │   └── progress.md
-├── baby-steps-archive/         # Riwayat pekerjaan
-│   ├── template-papan.md
-│   └── arsip-baby-step-*.md
-└── src/                        # Source code
+├── baby-steps-archive/   # Riwayat pekerjaan (dibuat otomatis)
+└── src/                  # Kode aplikasi Anda
 ```
 
-## Ringkasan Tahapan untuk Pemula
+## 🔄 Alur Kerja Singkat
 
-### 🚀 Tahap 0: Pengaturan Proyek
-- **Langkah 0.0:** Siapkan proposal proyek super singkat (3 bab)
-- **Langkah 0.1:** Buat spesifikasi produk terpadu dengan bantuan AI
-- **Langkah 0.2:** Siapkan "Memory Bank" dengan template yang disediakan
+1. **Perencanaan**: Update `memory-bank/papan-proyek.md` dengan tugas-tugas kecil
+2. **Penugasan**: Tentukan assignee untuk setiap tugas (manusia/AI)
+3. **Implementasi**: Setiap assignee mengerjakan tugasnya
+4. **Testing**: Validasi hasil sesuai kriteria
+5. **Commit**: Assignee melakukan git commit
+6. **Reset**: Jalankan `./vibe-guide/init_vibe.sh --reset` untuk siklus baru
 
-### ✅ Tahap 1: Validasi Rencana
-- Validasi teknis oleh Anda sebagai arsitek
-- Checklist untuk memastikan rencana masuk akal
-- Konsultasi dengan AI jika ada keraguan
+## 📖 Dokumentasi
 
-### 🔄 Tahap 2: Siklus Pengembangan Iteratif
-- **Langkah 2.1:** Update papan proyek dengan baby-step berikutnya
-- **Langkah 2.2:** Implementasi dan tes oleh AI coding
-- **Langkah 2.3:** Arsipkan progres dan update dokumentasi
-- **Langkah 2.4:** Commit ke Git dengan pesan yang jelas
-
-## 🎯 Tips Khusus untuk Pemula
-
-### Mulai dari Proyek Sederhana
-- Halaman biodata pribadi
-- Kalkulator sederhana
-- To-do list dasar
-
-### Komunikasi Efektif dengan AI
-- Berikan konteks yang jelas
-- Gunakan bahasa spesifik
-- Perbaiki prompt jika hasil tidak sesuai
-
-### Pentingnya Testing
-- Setiap baby-step harus bisa diuji
-- Jangan lanjut jika tes gagal
-- Tes sederhana sudah cukup untuk pemula
-
-## 🚨 Troubleshooting Umum
-
-### "AI tidak memahami konteks proyek saya"
-**Solusi:** Pastikan file `proposal-proyek.md` dan `spesifikasi-produk.md` sudah lengkap dan jelas.
-
-### "Baby-step terlalu besar dan membingungkan"
-**Solusi:** Pecah lagi menjadi tugas yang lebih kecil. Satu baby-step idealnya bisa diselesaikan dalam 30-60 menit.
-
-### "Tidak tahu teknologi mana yang harus dipilih"
-**Solusi:** Untuk pemula, pilih teknologi yang paling populer dan mudah dipelajari. Contoh: HTML/CSS/JavaScript untuk web, Python untuk backend.
-
-### "Tes gagal terus"
-**Solusi:** Periksa kembali kriteria tes. Mungkin terlalu rumit atau tidak jelas. Simplifikasi kriteria tes.
-
----
-
-**Selamat coding! 🚀**
-
-*Ingat: Vibe Coding bukan tentang kesempurnaan, tapi tentang progres yang konsisten dan terukur.*
-
-📖 **[Baca Panduan Lengkap V1.3.3](./panduan-vibe-coding-v1.3.3.md)** untuk detail implementasi yang lebih lengkap.
-
-📁 **[Versi Sebelumnya](./arsip/)** tersedia di folder arsip.
-
-## 📚 Sumber Daya Tambahan
-
-- **Template Memory Bank:** Tersedia di panduan lengkap
-- **Contoh Proyek Pemula:** Halaman biodata, kalkulator, to-do list
-- **Prompt Library:** Kumpulan prompt yang sudah teruji untuk berbagai skenario
+- **[⚡ Instalasi](./INSTALASI.md)** - Cara mendapatkan dan setup Vibe Coding
+- **[📋 Panduan Singkat](./PANDUAN_SINGKAT.md)** - Konsep dasar & alur kerja
+- **[📚 Panduan Lengkap V1.4](./PANDUAN_V1.4.md)** - Dokumentasi detail & contoh
 
 ## 🤝 Kontribusi
 
-Panduan ini terus berkembang berdasarkan feedback dari komunitas programmer pemula. Jika Anda memiliki saran atau menemukan bagian yang membingungkan, silakan buat issue atau pull request.
+Kami menerima kontribusi untuk meningkatkan panduan ini. Silakan buat issue atau pull request.
 
 ---
 
-**Versi:** 1.3.3 (Edisi Terstruktur & Skalabel)  
-**Terakhir Diperbarui:** 2025  
-**Lisensi:** MIT
+**Lisensi:** MIT | **Versi:** 1.4 | **Bahasa:** Indonesia

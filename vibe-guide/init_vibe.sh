@@ -52,7 +52,7 @@ if [ ! -f "vibe-guide/template-papan.md" ]; then
     - [ ] **T2:** ... | **File:** ... | **Tes:** ... | **Assignee:** <Nama dari team-manifest.md>
 
 ### SARAN & RISIKO
-- *(Bagian ini akan diisi oleh Gemini untuk memberikan saran atau peringatan risiko teknis)*
+- *(Bagian ini akan diisi oleh AI untuk memberikan saran atau peringatan risiko teknis)*
 EOL
 fi
 
