@@ -2,12 +2,12 @@
 
 **Selamat datang di Vibe Coding!** Panduan ini dirancang khusus untuk programmer pemula yang ingin membangun perangkat lunak berkualitas dengan bantuan AI.
 
-**Perubahan Utama di V1.3.1:**
-1. Panduan yang lebih ramah pemula dengan penjelasan yang lebih detail
-2. Tips tambahan untuk pemula
-3. Troubleshooting umum yang sering dihadapi
-4. Contoh-contoh praktis yang mudah dipahami
-5. Struktur dokumen yang lebih terorganisir
+**Perubahan Utama di V1.3.3:**
+1. **Struktur Folder Terpisah:** Memisahkan konteks aktif (`memory-bank`) dari riwayat pekerjaan (`baby-steps-archive`)
+2. **Alur Kerja Otomatis:** Template dan perintah terminal untuk konsistensi dan efisiensi
+3. **Checkpoint Integrasi:** Langkah baru untuk memastikan semua fitur bekerja sama dengan baik
+4. **Visualisasi Alur:** Diagram untuk mempermudah pemahaman proses
+5. **Tips & Contoh Lanjutan:** Format commit yang lebih baik dan prompt debugging yang efektif
 
 ## Filosofi Inti (Tetap)
 1. **Manusia sebagai Arsitek Utama**
@@ -16,17 +16,20 @@
 4. **Tes Berkelanjutan**
 5. **Dokumentasi Hidup**
 
-📖 **[Baca Panduan Lengkap V1.3.1](./panduan-vibe-coding-v1.3.1.md)**
+📖 **[Baca Panduan Lengkap V1.3.3](./panduan-vibe-coding-v1.3.3.md)**
 
-## Alur Dokumen Terpadu
+## Struktur Folder Proyek V1.3.3
 ```
-memory-bank/
-├── proposal-proyek.md
-├── spesifikasi-produk.md       # Menggantikan 3 dokumen lama
-├── papan-proyek.md             # Pusat kendali untuk status dan tugas
-├── architecture.md
-├── progress.md
-└── arsip-baby-steps/           # Folder untuk menyimpan riwayat tugas
+proyek/
+├── memory-bank/                # Konteks aktif
+│   ├── spesifikasi-produk.md
+│   ├── papan-proyek.md
+│   ├── architecture.md
+│   └── progress.md
+├── baby-steps-archive/         # Riwayat pekerjaan
+│   ├── template-papan.md
+│   └── arsip-baby-step-*.md
+└── src/                        # Source code
 ```
 
 ## Ringkasan Tahapan untuk Pemula
@@ -84,7 +87,9 @@ memory-bank/
 
 *Ingat: Vibe Coding bukan tentang kesempurnaan, tapi tentang progres yang konsisten dan terukur.*
 
-📖 **[Baca Panduan Lengkap V1.3.1](./panduan-vibe-coding-v1.3.1.md)** untuk detail implementasi yang lebih lengkap.
+📖 **[Baca Panduan Lengkap V1.3.3](./panduan-vibe-coding-v1.3.3.md)** untuk detail implementasi yang lebih lengkap.
+
+📁 **[Versi Sebelumnya](./arsip/)** tersedia di folder arsip.
 
 ## 📚 Sumber Daya Tambahan
 
@@ -98,6 +103,6 @@ Panduan ini terus berkembang berdasarkan feedback dari komunitas programmer pemu
 
 ---
 
-**Versi:** 1.3.1 (Edisi Ramah Pemula)  
+**Versi:** 1.3.3 (Edisi Terstruktur & Skalabel)  
 **Terakhir Diperbarui:** 2025  
 **Lisensi:** MIT
