@@ -187,6 +187,7 @@ Setelah checkpoint selesai, lanjutkan kembali ke siklus pengembangan normal.
 * **"AI tidak memahami konteks"**: Pastikan `spesifikasi-produk.md` dan `progress.md` sudah lengkap dan jelas.
 * **"Baby-step terlalu besar"**: Pecah lagi menjadi tugas yang lebih kecil. Idealnya satu tugas bisa selesai dalam 30-60 menit.
 * **"Tes gagal terus"**: Periksa kembali kriteria tes. Mungkin terlalu rumit atau tidak jelas. Sederhanakan kriteria tesnya.
+* **"Git commit error: pathspec tidak ditemukan"**: **SELALU gunakan tanda petik** pada pesan commit. Contoh yang benar: `git commit -m "Feat: Implementasi fitur login"`. Tanpa tanda petik, Git akan menganggap setiap kata sebagai file terpisah.
 * **Debugging dengan AI**: Jika Anda menemukan *bug*, gunakan *prompt* terstruktur untuk mendapatkan solusi.
     **Contoh Prompt Debugging:**
     ```prompt
