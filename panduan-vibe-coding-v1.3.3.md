@@ -15,7 +15,7 @@ Inti metode ini tetap sama: **Anda (manusia) adalah arsitek utama**, sementara *
 
 1.  **Manusia sebagai Arsitek Utama:** Anda perencana strategis, AI pelaksana teknis.
 2.  **Konteks adalah Kunci:** AI membutuhkan pemahaman mendalam tentang proyek melalui "Memory Bank" yang bersih dan terstruktur.
-3.  **Iterasi dengan "Baby Steps":** Pekerjaan besar dipecah menjadi tugas-tugas kecil yang dapat diuji dalam waktu kurang dari 60 menit.
+3.  **Iterasi dengan "Baby Steps":** Pekerjaan besar dipecah menjadi tugas-tugas kecil yang dapat diuji dalam waktu 30-60 menit.
 4.  **Tes Berkelanjutan:** Setiap langkah kecil harus diuji sebelum melanjutkan. Kini diperkuat dengan tes integrasi.
 5.  **Dokumentasi Hidup:** Dokumen perencanaan adalah artefak yang terus diperbarui seiring progres.
 
@@ -132,6 +132,10 @@ Tugasmu sekarang adalah memperbarui file `memory-bank/papan-proyek.md`.
 ```
 
 ### Langkah 2.2: Implementasi & Tes Lokal
+**Pembagian Peran:**
+- **AI:** Menulis kode sesuai spesifikasi tugas
+- **Anda:** Review kode, tes manual, dan validasi hasil
+
 Gunakan asisten AI di IDE Anda untuk mengerjakan tugas di `papan-proyek.md`. Setelah AI selesai, **Anda wajib melakukan tes manual** sesuai kriteria di papan proyek.
 
 ### Langkah 2.3: Arsipkan & Reset Papan (Langkah Krusial!)
@@ -160,11 +164,18 @@ Arsip: baby-steps-archive/baby-step-$(date +%Y%m%d).md"
 ```
 
 ### Langkah 2.5: Checkpoint Integrasi (Setiap 3-5 Baby-Step)
-Setelah beberapa siklus, luangkan waktu untuk memastikan semua bagian bekerja bersama. Tambahkan catatan ini di `progress.md`.
+Lakukan checkpoint untuk memastikan semua bagian bekerja bersama:
+
+**Kapan melakukan checkpoint:**
+- Setelah **3 baby-step** jika melibatkan integrasi antar modul/fitur
+- Setelah **5 baby-step** untuk fitur yang berdiri sendiri
+- Sebelum menambah fitur baru yang kompleks
+
+Tambahkan catatan ini di `progress.md`:
 ```markdown
 ### CHECKPOINT INTEGRASI [Update: <tanggal>]
-- [ ] Tes interoperabilitas antara Fitur A dan Fitur B.
-- [ ] Validasi konsistensi data di seluruh modul.
+- [ ] Tes interoperabilitas antara fitur yang sudah ada.
+- [ ] Validasi konsistensi data di seluruh aplikasi.
 - [ ] Periksa apakah arsitektur di `architecture.md` masih relevan.
 - [ ] Lakukan refactor minor jika ada duplikasi kode.
 ```
@@ -173,6 +184,11 @@ Setelah checkpoint selesai, lanjutkan kembali ke siklus pengembangan normal.
 ---
 
 ## 🛠️ Tips & Troubleshooting
+
+### Definisi & Standar
+* **Baby-Step:** Tugas yang dapat diselesaikan dalam **30-60 menit** dengan kriteria tes yang jelas.
+* **Checkpoint:** Validasi integrasi setiap 3-5 baby-step tergantung kompleksitas.
+* **Tes Lokal:** Minimal bisa menjalankan fitur tanpa error, tidak perlu sempurna.
 
 ### Tips untuk Memulai
 * **Mulai dari Proyek Sederhana:** Halaman biodata, kalkulator, atau to-do list adalah awal yang baik.
@@ -188,6 +204,11 @@ Setelah checkpoint selesai, lanjutkan kembali ke siklus pengembangan normal.
 * **"Baby-step terlalu besar"**: Pecah lagi menjadi tugas yang lebih kecil. Idealnya satu tugas bisa selesai dalam 30-60 menit.
 * **"Tes gagal terus"**: Periksa kembali kriteria tes. Mungkin terlalu rumit atau tidak jelas. Sederhanakan kriteria tesnya.
 * **"Git commit error: pathspec tidak ditemukan"**: **SELALU gunakan tanda petik** pada pesan commit. Contoh yang benar: `git commit -m "Feat: Implementasi fitur login"`. Tanpa tanda petik, Git akan menganggap setiap kata sebagai file terpisah.
+
+### Recovery & Rollback Sederhana
+* **Jika baby-step gagal total**: Gunakan `git reset --hard HEAD~1` untuk kembali ke commit sebelumnya, lalu pecah tugas menjadi lebih kecil.
+* **Jika ada konflik saat merge**: Batalkan merge dengan `git merge --abort`, lalu selesaikan satu per satu secara manual.
+* **Jika aplikasi rusak setelah integrasi**: Kembali ke checkpoint terakhir yang stabil, lalu implementasi ulang dengan baby-step yang lebih kecil.
 * **Debugging dengan AI**: Jika Anda menemukan *bug*, gunakan *prompt* terstruktur untuk mendapatkan solusi.
     **Contoh Prompt Debugging:**
     ```prompt
