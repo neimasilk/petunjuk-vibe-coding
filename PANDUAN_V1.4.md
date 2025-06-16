@@ -81,18 +81,17 @@ Buka file `vibe-guide/team-manifest.md` dan daftarkan semua anggota tim, baik ma
 | Ani             | Manusia | Implementor       | ani@perusahaan.com            |
 ```
 
-### Langkah 0.3: Buat Spesifikasi Produk (Sama seperti v1.3.3)
-Gunakan AI untuk membantu Anda merancang spesifikasi awal berdasarkan ide proyek.
+### Langkah 0.3: Buat Spesifikasi Produk yang Komprehensif
+Ini adalah langkah paling fundamental untuk menentukan arah proyek Anda. Spesifikasi produk yang solid akan menjadi "otak" dari `memory-bank` yang akan memandu seluruh tim (manusia dan AI).
 
-**Prompt untuk AI (Gemini/Claude/ChatGPT):**
-```prompt
-Saya akan melakukan vibe coding. Berdasarkan ide proyek ini, tolong bantu saya membuat draf awal untuk file `memory-bank/spesifikasi-produk.md`. Isinya harus mencakup:
-1. Visi & Fitur Utama.
-2. Rekomendasi Tumpukan Teknologi (Tech Stack) beserta alasannya.
-3. Rencana Implementasi Awal untuk MVP.
+Untuk membuat `spesifikasi-produk.md` yang profesional dan terstruktur, kami telah menyediakan panduan mendalam.
 
-Berikut adalah ide utama proyek saya: [Jelaskan ide proyek Anda secara singkat di sini]
-```
+**Wajib dibaca:** **[Lihat Panduan Pembuatan PRD Lengkap](./vibe-guide/PANDUAN_PRD.md)**.
+
+Panduan tersebut akan memandu Anda melalui proses:
+- Mendefinisikan visi, user persona, dan metrik sukses.
+- Melakukan dialog mendalam dengan AI untuk memvalidasi ide.
+- Menggunakan template PRD yang terbukti untuk mengisi `memory-bank/spesifikasi-produk.md` Anda.
 
 ---
 

@@ -24,6 +24,7 @@ Vibe Coding adalah pendekatan pengembangan perangkat lunak di mana **Manusia dan
 - **Otomatisasi Penuh**: Skrip untuk setup dan reset alur kerja
 - **Git Commit oleh AI**: AI melakukan commit atas nama mereka sendiri
 - **Panduan Terintegrasi**: Semua materi dalam satu folder `vibe-guide/`
+- **Panduan Perencanaan Produk**: Dilengkapi dengan panduan pembuatan Product Requirements Document (PRD) untuk perencanaan awal yang matang
 
 ## 📂 Struktur Workspace
 
