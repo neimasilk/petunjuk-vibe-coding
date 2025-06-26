@@ -61,6 +61,7 @@ my-project/
 ## 📖 Dokumentasi
 
 - **[📚 Panduan Utama](./vibe-guide/VIBE_CODING_GUIDE.md)** - Panduan lengkap V1.4 (dalam workspace)
+- **[👥 Panduan Peran Tim](./vibe-guide/PERAN_TIM.md)** - Definisi peran Arsitek, Dokumenter, Tester, dll.
 - **[⚡ Instalasi](./INSTALASI.md)** - Cara mendapatkan dan setup Vibe Coding
 - **[📋 Panduan Singkat](./PANDUAN_SINGKAT.md)** - Konsep dasar & alur kerja
 - **[📚 Panduan Lengkap V1.4](./PANDUAN_V1.4.md)** - Dokumentasi detail & contoh (arsip)

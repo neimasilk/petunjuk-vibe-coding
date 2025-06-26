@@ -10,7 +10,7 @@
 
 ## Catatan Penggunaan
 
-- **Nama Pengembang**: Nama yang akan muncul di git commit dan penugasan tugas
-- **Tipe**: Manusia atau AI
-- **Peran Utama**: Tanggung jawab utama dalam tim (Arsitek, Implementor, Reviewer, dll.)
-- **Email**: Email yang akan digunakan untuk git commit (pastikan konsisten)
+- **Nama Pengembang**: Nama yang akan muncul di git commit dan penugasan tugas.
+- **Tipe**: Manusia atau AI.
+- **Peran Utama**: Tanggung jawab utama dalam tim. Ini adalah peran primer. Anggota tim dapat mengambil peran sekunder sesuai kebutuhan siklus pengembangan. Lihat `PERAN_TIM.md` untuk detailnya.
+- **Email**: Email yang akan digunakan untuk git commit (pastikan konsisten).

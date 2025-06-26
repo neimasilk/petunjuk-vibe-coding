@@ -55,6 +55,11 @@ chmod +x vibe-guide/init_vibe.sh
 ### Langkah 0.2: Daftarkan Tim Anda
 Buka file `vibe-guide/team-manifest.md` dan daftarkan semua anggota tim, baik manusia maupun AI. Ini adalah langkah krusial untuk alur kerja selanjutnya.
 
+### Langkah 0.2.1: Pahami Peran Tim
+Untuk memperjelas tanggung jawab, Vibe Coding mendefinisikan lima peran utama: Arsitek, Dokumenter, Tester, Dev. Backend, dan Dev. Frontend. Satu orang bisa memegang beberapa peran.
+
+**Wajib dibaca:** **[Lihat Panduan Peran Tim Lengkap](./PERAN_TIM.md)** untuk memahami alur kerja dan tanggung jawab masing-masing peran.
+
 *(Konten untuk `vibe-guide/team-manifest.md`)*
 ```markdown
 # Daftar Tim Proyek
