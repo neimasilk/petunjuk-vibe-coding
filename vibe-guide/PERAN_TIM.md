@@ -2,7 +2,7 @@
 
 Dokumen ini mendefinisikan peran dan tanggung jawab setiap anggota dalam tim Vibe Coding untuk memastikan kolaborasi yang efisien dan meminimalisir tumpang tindih. Satu individu dapat memegang beberapa peran, namun pemisahan tanggung jawab ini penting untuk kejelasan.
 
-##  पांच (Lima) Peran Utama
+##  Lima Peran Utama
 
 | Peran | Fokus Utama | Detail Panduan |
 | :--- | :--- | :--- |
