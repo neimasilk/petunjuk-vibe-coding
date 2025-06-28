@@ -55,7 +55,7 @@ if [ ! -f "vibe-guide/template-papan.md" ]; then
 - **Tujuan:** *Jelaskan hasil akhir yang diharapkan dari baby-step ini.*
 - **Tugas:**
     - [ ] **T1:** Deskripsi tugas | **File:** \`path/ke/file\` | **Tes:** Kriteria sukses | **Assignee:** <Nama dari team-manifest.md>
-    - [ ] **T2:** ... | **File:** ... | **Tes:** ... | **Assignee:** <Nama dari team-manifest.md>
+    - [ ] **T2:** Deskripsi tugas | **File:** \`path/ke/file\` | **Tes:** Kriteria sukses | **Assignee:** <Nama dari team-manifest.md>
 
 ### SARAN & RISIKO
 - *(Bagian ini akan diisi oleh AI untuk memberikan saran atau peringatan risiko teknis)*

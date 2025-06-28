@@ -32,3 +32,20 @@ Berikut adalah contoh bagaimana peran-peran ini berinteraksi dalam satu siklus *
     *   **Arsitek** melakukan *code review* akhir.
     *   **Dokumenter** memastikan semua dokumentasi terkait (jika ada) sudah diperbarui.
     *   **Arsitek** menjalankan skrip `init_vibe.sh --reset` untuk memulai siklus baru.
+
+## 🔄 Klarifikasi Alur Kerja
+
+### Kapan Peran Berinteraksi?
+- **Paralel:** Dev. Frontend dan Dev. Backend dapat bekerja bersamaan pada tugas berbeda
+- **Sequential:** Tester menunggu implementasi selesai sebelum memulai pengujian
+- **Continuous:** Dokumenter dapat bekerja sepanjang siklus, memperbarui dokumentasi seiring kemajuan
+
+### Siapa yang Bertanggung Jawab?
+- **Assignee dalam papan-proyek.md:** Penanggung jawab utama untuk menyelesaikan tugas
+- **Peran lain:** Dapat memberikan input dan review, tetapi tidak mengambil alih tugas
+- **Arsitek:** Selalu bertanggung jawab atas keputusan akhir dan kualitas keseluruhan
+
+### Resolusi Konflik
+- **Disagreement teknis:** Arsitek memiliki keputusan akhir
+- **Scope creep:** Arsitek menentukan apakah perubahan masuk baby-step saat ini atau yang berikutnya
+- **Quality issues:** Tester dapat memblokir merge hingga kriteria tes terpenuhi

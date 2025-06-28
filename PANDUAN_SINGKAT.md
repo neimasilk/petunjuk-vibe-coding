@@ -43,7 +43,8 @@ chmod +x vibe-guide/init_vibe.sh
 - **AI bingung?** → Pastikan `spesifikasi-produk.md` lengkap
 - **Tugas terlalu besar?** → Pecah jadi sub-tugas lebih kecil
 - **Tes gagal terus?** → Sederhanakan kriteria tes
+- **Bug kompleks/baby-step gagal?** → [Panduan Debugging & Git Recovery](./vibe-guide/DEBUGGING_GIT.md)
 
 ---
 
-**Butuh detail lengkap?** → [PANDUAN_V1.4.md](./PANDUAN_V1.4.md)
+**Butuh detail lengkap?** → [VIBE_CODING_GUIDE.md](./vibe-guide/VIBE_CODING_GUIDE.md)

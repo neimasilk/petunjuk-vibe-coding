@@ -27,6 +27,45 @@
 
 ---
 
+### 📝 Panduan Gaya Penulisan Kode
+
+#### Format Komentar yang Baik vs Buruk:
+
+❌ **Buruk** - Menjelaskan "apa":
+```javascript
+// Increment counter by 1
+counter++;
+```
+
+✅ **Baik** - Menjelaskan "mengapa":
+```javascript
+// Increment untuk tracking jumlah retry sebelum timeout
+counter++;
+```
+
+#### Format Dokumentasi Kode:
+
+❌ **Buruk** - Inline tanpa konteks:
+```markdown
+`git reset`
+```
+
+✅ **Baik** - Code block dengan konteks:
+```markdown
+```bash
+git reset --hard HEAD~1
+```
+```
+
+#### Konsistensi Terminologi:
+- Gunakan "git reset" (lowercase) dalam teks
+- Gunakan "Git Reset" (title case) dalam heading
+- Selalu sertakan flag (`--hard`, `--soft`) dalam contoh kode
+
+> 💡 **Referensi**: Lihat [Template Bug Report](../DEBUGGING_GIT.md#1--template-bug-report-standar) untuk contoh dokumentasi yang terstruktur.
+
+---
+
 ### Batasan Peran (Hal yang Harus Dihindari)
 
 - **❌ Dilarang Mengubah Logika Bisnis:** Anda tidak boleh mengubah cara kerja kode. Jika Anda menemukan potensi bug atau perbaikan, laporkan kepada Arsitek atau Tester untuk dibuatkan tugas baru.

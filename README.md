@@ -32,21 +32,28 @@ Setelah inisialisasi, proyek Anda akan memiliki struktur:
 
 ```
 my-project/
-├── vibe-guide/               # Folder khusus panduan
-│   ├── VIBE_CODING_GUIDE.md   # Panduan utama
-│   ├── template-papan.md      # Template terstandarisasi
-│   └── init_vibe.sh           # Script setup otomatis
+├── vibe-guide/               # Folder panduan (disalin dari repo ini)
+│   ├── VIBE_CODING_GUIDE.md   # Panduan workspace
+│   ├── template-papan.md      # Template baby-step
+│   ├── init_vibe.sh           # Script setup otomatis
+│   ├── team-manifest.md       # Daftar anggota tim
+│   ├── PERAN_TIM.md           # Definisi peran
+│   ├── DEBUGGING_GIT.md       # Panduan debugging
+│   └── roles/                 # Detail peran tim
+│       ├── arsitek.md
+│       ├── dokumenter.md
+│       └── ...
 │
-├── memory-bank/              # Konteks aktif
-│   ├── spesifikasi-produk.md
-│   ├── papan-proyek.md       # Reset tiap iterasi
-│   ├── architecture.md
-│   └── progress.md
+├── memory-bank/              # Konteks aktif (dibuat otomatis)
+│   ├── spesifikasi-produk.md  # PRD proyek
+│   ├── papan-proyek.md       # Baby-step saat ini
+│   ├── architecture.md       # Desain sistem
+│   └── progress.md           # Catatan kemajuan
 │
-├── baby-steps-archive/       # Riwayat pekerjaan
+├── baby-steps-archive/       # Riwayat pekerjaan (dibuat otomatis)
 │   └── baby-step-*.md        # Arsip per langkah
 │
-└── src/                      # Kode aplikasi
+└── src/                      # Kode aplikasi Anda
 ```
 
 ## 🔄 Alur Kerja Singkat
@@ -58,13 +65,25 @@ my-project/
 5. **Commit**: Assignee melakukan git commit
 6. **Reset**: Jalankan `./vibe-guide/init_vibe.sh --reset` untuk siklus baru
 
+## 📚 Glosarium
+
+| Istilah | Definisi |
+|---------|----------|
+| **Baby-step** | Tugas kecil yang dapat diselesaikan dalam 30-60 menit |
+| **Memory-bank** | Folder konteks aktif yang berisi informasi proyek terkini |
+| **Assignee** | Anggota tim (manusia atau AI) yang bertanggung jawab atas tugas tertentu |
+| **Tim Hibrida** | Kolaborasi setara antara manusia dan AI dalam pengembangan |
+| **Git Reset** | Perintah untuk kembali ke commit sebelumnya |
+| **Progress Signifikan** | >50% tugas dalam baby-step telah selesai |
+| **Estimasi Baby-step** | Waktu target penyelesaian: 30-60 menit |
+
 ## 📖 Dokumentasi
 
-- **[📚 Panduan Utama](./vibe-guide/VIBE_CODING_GUIDE.md)** - Panduan lengkap V1.4 (dalam workspace)
+- **[📚 Panduan Utama](./vibe-guide/VIBE_CODING_GUIDE.md)** - Panduan lengkap V1.4
 - **[👥 Panduan Peran Tim](./vibe-guide/PERAN_TIM.md)** - Definisi peran Arsitek, Dokumenter, Tester, dll.
 - **[⚡ Instalasi](./INSTALASI.md)** - Cara mendapatkan dan setup Vibe Coding
 - **[📋 Panduan Singkat](./PANDUAN_SINGKAT.md)** - Konsep dasar & alur kerja
-- **[📚 Panduan Lengkap V1.4](./PANDUAN_V1.4.md)** - Dokumentasi detail & contoh (arsip)
+- **[🐛 Debugging & Git Recovery](./vibe-guide/DEBUGGING_GIT.md)** - Panduan troubleshooting dan recovery
 
 ## 🤝 Kontribusi
 

@@ -20,21 +20,25 @@ Struktur ini dirancang untuk mendukung kolaborasi hibrida dan menjaga proyek tet
 
 ```
 my-project/
-├── vibe-guide/               # Folder khusus panduan
-│   ├── VIBE_CODING_GUIDE.md   # Panduan utama
-│   ├── template-papan.md      # Template terstandarisasi
-│   └── init_vibe.sh           # Script setup otomatis
+├── vibe-guide/               # Folder panduan (disalin dari repo)
+│   ├── VIBE_CODING_GUIDE.md   # Panduan workspace
+│   ├── template-papan.md      # Template baby-step
+│   ├── init_vibe.sh           # Script setup otomatis
+│   ├── team-manifest.md       # Daftar anggota tim
+│   ├── PERAN_TIM.md           # Definisi peran
+│   ├── DEBUGGING_GIT.md       # Panduan debugging
+│   └── roles/                 # Detail peran tim
 │
-├── memory-bank/              # Konteks aktif
-│   ├── spesifikasi-produk.md
-│   ├── papan-proyek.md       # Reset tiap iterasi
-│   ├── architecture.md
-│   └── progress.md
+├── memory-bank/              # Konteks aktif (dibuat otomatis)
+│   ├── spesifikasi-produk.md  # PRD proyek
+│   ├── papan-proyek.md       # Baby-step saat ini
+│   ├── architecture.md       # Desain sistem
+│   └── progress.md           # Catatan kemajuan
 │
-├── baby-steps-archive/       # Riwayat pekerjaan
+├── baby-steps-archive/       # Riwayat pekerjaan (dibuat otomatis)
 │   └── baby-step-*.md        # Arsip per langkah
 │
-└── src/                      # Kode aplikasi
+└── src/                      # Kode aplikasi Anda
 ```
 
 ---
@@ -167,6 +171,7 @@ Ini adalah langkah paling penting dalam kolaborasi hibrida. Siapa pun yang menge
 * **AI tidak memahami tugas:** Pastikan deskripsi tugas di papan proyek cukup detail dan spesifik.
 * **Konflik merge:** Gunakan baby-steps yang lebih kecil untuk menghindari konflik besar.
 * **Tes gagal:** Review kembali kriteria tes dan pastikan realistis untuk dicapai.
+* **Bug kompleks atau baby-step gagal total:** Lihat [Panduan Debugging & Git Recovery](DEBUGGING_GIT.md) untuk strategi reset dan recovery yang aman. Pastikan untuk memperbarui `papan-proyek.md` dengan baby-step yang lebih kecil setelah reset.
 
 ---
 
