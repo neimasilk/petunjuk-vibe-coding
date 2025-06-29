@@ -28,6 +28,7 @@ chmod +x vibe-guide/init_vibe.sh
 ## 📁 File Penting
 
 - `memory-bank/papan-proyek.md` → Daftar tugas aktif
+- `memory-bank/summary-report.md` → 📊 Ringkasan proyek (NEW!)
 - `memory-bank/spesifikasi-produk.md` → Visi & tech stack
 - `vibe-guide/team-manifest.md` → Daftar anggota tim
 
@@ -37,6 +38,7 @@ chmod +x vibe-guide/init_vibe.sh
 - **Tes jelas**: Setiap tugas punya kriteria sukses yang terukur
 - **Commit terpisah**: Manusia dan AI commit dengan nama masing-masing
 - **Iterasi cepat**: Jangan perfectionist, fokus pada progress
+- **Dashboard**: Gunakan `./vibe-guide/init_vibe.sh --dashboard` untuk quick overview
 
 ## 🆘 Troubleshooting
 

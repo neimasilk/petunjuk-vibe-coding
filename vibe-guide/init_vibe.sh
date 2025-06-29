@@ -1,6 +1,26 @@
 #!/bin/bash
 
-# Vibe Coding Initializer/Resetter Script v1.4
+# Vibe Coding Initializer/Resetter Script v1.4.1 (dengan Summary Report)
+
+# Fungsi untuk update summary report
+update_summary_report() {
+    TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
+    TOTAL_STEPS=$(ls baby-steps-archive/ 2>/dev/null | wc -l)
+    CURRENT_FEATURE=$(grep "BABY-STEP BERJALAN:" memory-bank/papan-proyek.md 2>/dev/null | sed 's/### BABY-STEP BERJALAN: //' | head -1)
+    LAST_PROGRESS=$(tail -3 memory-bank/progress.md 2>/dev/null | head -3)
+    
+    # Buat summary report dari template
+    cp vibe-guide/template-summary.md memory-bank/summary-report.md
+    
+    # Update timestamp
+    sed -i "s/\[Auto-generated timestamp\]/$TIMESTAMP/g" memory-bank/summary-report.md
+    
+    # Update data dinamis
+    sed -i "s/\[Nama fitur yang sedang dikerjakan\]/$CURRENT_FEATURE/g" memory-bank/summary-report.md
+    sed -i "s/\[Angka\]/$TOTAL_STEPS/g" memory-bank/summary-report.md
+    
+    echo "📊 Summary report diperbarui: memory-bank/summary-report.md"
+}
 
 # Fungsi untuk mencatat progres dan mengarsipkan papan
 archive_and_log() {
@@ -15,9 +35,12 @@ archive_and_log() {
     # 2. Catat progres di file progress.md
     echo "$(date +%Y-%m-%d): Selesai '$FEATURE_NAME'. Lihat arsip: $ARCHIVE_FILE" >> memory-bank/progress.md
     echo "✅ Progres dicatat di memory-bank/progress.md"
+    
+    # 3. Update summary report
+    update_summary_report
 }
 
-# Cek apakah ini adalah reset atau inisialisasi awal
+# Cek command line arguments
 if [ "$1" == "--reset" ]; then
     echo "🚀 Mereset alur kerja Vibe Coding..."
     archive_and_log
@@ -28,6 +51,24 @@ if [ "$1" == "--reset" ]; then
     exit 0
 fi
 
+if [ "$1" == "--update-summary" ]; then
+    echo "📊 Memperbarui summary report..."
+    update_summary_report
+    echo "✅ Summary report berhasil diperbarui!"
+    exit 0
+fi
+
+if [ "$1" == "--dashboard" ]; then
+    echo "📊 DASHBOARD PROYEK VIBE CODING"
+    echo "================================"
+    if [ -f "memory-bank/summary-report.md" ]; then
+        cat memory-bank/summary-report.md
+    else
+        echo "⚠️  Summary report belum ada. Jalankan: ./init_vibe.sh --update-summary"
+    fi
+    exit 0
+fi
+
 # Inisialisasi awal
 echo "🚀 Inisialisasi Proyek Vibe Coding v1.4 (Edisi Hibrida)..."
 mkdir -p memory-bank baby-steps-archive src
@@ -35,6 +76,12 @@ mkdir -p memory-bank baby-steps-archive src
 # Buat file jika belum ada
 touch memory-bank/{spesifikasi-produk,architecture,progress}.md
 touch vibe-guide/team-manifest.md
+
+# Buat summary report dari template
+if [ -f "vibe-guide/template-summary.md" ]; then
+    cp vibe-guide/template-summary.md memory-bank/summary-report.md
+    echo "📊 Summary report dibuat: memory-bank/summary-report.md"
+fi
 
 # Pastikan VIBE_CODING_GUIDE.md ada
 if [ ! -f "vibe-guide/VIBE_CODING_GUIDE.md" ]; then
@@ -78,3 +125,9 @@ echo ""
 echo "➡️ Langkah selanjutnya:"
 echo "   1. Baca panduan: vibe-guide/VIBE_CODING_GUIDE.md"
 echo "   2. Daftarkan tim: vibe-guide/team-manifest.md"
+echo "   3. Lihat summary: memory-bank/summary-report.md"
+echo ""
+echo "💡 Command berguna:"
+echo "   ./vibe-guide/init_vibe.sh --dashboard     # Lihat ringkasan proyek"
+echo "   ./vibe-guide/init_vibe.sh --update-summary # Update summary manual"
+echo "   ./vibe-guide/init_vibe.sh --reset        # Reset ke baby-step baru"

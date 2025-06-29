@@ -33,7 +33,8 @@ my-project/
 │   ├── spesifikasi-produk.md  # PRD proyek
 │   ├── papan-proyek.md       # Baby-step saat ini
 │   ├── architecture.md       # Desain sistem
-│   └── progress.md           # Catatan kemajuan
+│   ├── progress.md           # Catatan kemajuan
+│   └── summary-report.md     # 📊 Laporan ringkasan proyek
 │
 ├── baby-steps-archive/       # Riwayat pekerjaan (dibuat otomatis)
 │   └── baby-step-*.md        # Arsip per langkah
@@ -157,6 +158,38 @@ Ini adalah langkah paling penting dalam kolaborasi hibrida. Siapa pun yang menge
 4. **Kerjakan tugas** sesuai assignee
 5. **Test & commit** oleh yang mengerjakan
 6. **Reset papan** dengan `./vibe-guide/init_vibe.sh --reset`
+
+---
+
+## 📊 Summary Report & Dashboard
+
+### Fitur Summary Report
+Vibe Coding v1.4.1 memperkenalkan **Summary Report** (`memory-bank/summary-report.md`) yang memberikan ringkasan komprehensif namun singkat dari seluruh proyek Anda.
+
+**Keuntungan Summary Report:**
+- 📋 **One-page overview** dari status proyek
+- 🔄 **Auto-update** setiap kali baby-step selesai
+- 📈 **Tracking progress** dan metrik kunci
+- 🎯 **Next actions** yang jelas
+- ⚠️ **Risk awareness** untuk antisipasi masalah
+
+### Command Dashboard
+```bash
+# Lihat ringkasan proyek di terminal
+./vibe-guide/init_vibe.sh --dashboard
+
+# Update summary report manual
+./vibe-guide/init_vibe.sh --update-summary
+
+# Reset baby-step (otomatis update summary)
+./vibe-guide/init_vibe.sh --reset
+```
+
+### Kapan Menggunakan Summary Report
+- **Daily standup:** Quick overview untuk tim
+- **Client update:** Ringkasan progress untuk klien
+- **Context switching:** Cepat memahami status saat kembali ke proyek
+- **Planning:** Basis untuk merencanakan baby-step berikutnya
 
 ---
 

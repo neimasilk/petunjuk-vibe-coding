@@ -94,7 +94,8 @@ my-project/
 │   ├── spesifikasi-produk.md  # PRD proyek
 │   ├── papan-proyek.md       # Baby-step saat ini
 │   ├── architecture.md       # Desain sistem
-│   └── progress.md           # Catatan kemajuan
+│   ├── progress.md           # Catatan kemajuan
+│   └── summary-report.md     # 📊 Laporan ringkasan proyek
 │
 ├── baby-steps-archive/       # Riwayat pekerjaan (dibuat otomatis)
 │   └── baby-step-*.md        # Arsip per langkah
@@ -154,6 +155,12 @@ Copy-Item "vibe-guide\template-papan.md" "memory-bank\papan-proyek.md"
 New-Item -ItemType File -Path "memory-bank\spesifikasi-produk.md" -Force
 New-Item -ItemType File -Path "memory-bank\architecture.md" -Force
 New-Item -ItemType File -Path "memory-bank\progress.md" -Force
+
+# Salin template summary report
+if (Test-Path "vibe-guide\template-summary.md") {
+    Copy-Item "vibe-guide\template-summary.md" "memory-bank\summary-report.md"
+    Write-Host "📊 Summary report dibuat: memory-bank\summary-report.md"
+}
 ```
 
 ### 3. Inisialisasi Git (Opsional)

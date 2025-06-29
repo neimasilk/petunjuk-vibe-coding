@@ -14,6 +14,7 @@
 - *(Bagian ini akan diisi oleh AI untuk memberikan saran atau peringatan risiko teknis)*
 
 ### 🔗 REFERENSI PANDUAN
+- **📊 Lihat ringkasan proyek**: `memory-bank/summary-report.md` atau `./vibe-guide/init_vibe.sh --dashboard`
 - **Jika mengalami bug kompleks**: Lihat [Panduan Debugging & Git Recovery](./DEBUGGING_GIT.md)
 - **Untuk review kode**: Konsultasi dengan [Dokumenter](./roles/dokumenter.md)
 - **Untuk testing**: Koordinasi dengan [Tester](./roles/tester.md)

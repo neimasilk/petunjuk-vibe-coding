@@ -48,7 +48,8 @@ my-project/
 │   ├── spesifikasi-produk.md  # PRD proyek
 │   ├── papan-proyek.md       # Baby-step saat ini
 │   ├── architecture.md       # Desain sistem
-│   └── progress.md           # Catatan kemajuan
+│   ├── progress.md           # Catatan kemajuan
+│   └── summary-report.md     # 📊 Laporan ringkasan proyek
 │
 ├── baby-steps-archive/       # Riwayat pekerjaan (dibuat otomatis)
 │   └── baby-step-*.md        # Arsip per langkah

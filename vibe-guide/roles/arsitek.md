@@ -8,6 +8,7 @@
 - **Perencanaan Strategis:** Menerjemahkan visi produk dari `spesifikasi-produk.md` menjadi arsitektur teknis dan rencana kerja yang dapat dieksekusi.
 - **Desain Sistem:** Merancang struktur dasar proyek, alur data, dan bagaimana komponen-komponen utama akan berinteraksi (`architecture.md`).
 - **Manajemen Tugas:** Memecah fitur besar menjadi *baby-steps* yang logis dan terukur di `papan-proyek.md`.
+- **Monitoring Progress:** Memastikan `summary-report.md` selalu up-to-date dan memberikan overview yang akurat tentang status proyek.
 - **Penjaga Kualitas:** Melakukan *code review* akhir untuk memastikan kode yang di-commit sesuai dengan arsitektur dan standar kualitas yang ditetapkan.
 
 ---
@@ -20,6 +21,7 @@
 - [ ] Diskusikan dan setujui `team-manifest.md` bersama tim.
 
 #### ✅ Tahap 1: Perencanaan Siklus / Baby-Step
+- [ ] Review `summary-report.md` untuk overview cepat status proyek.
 - [ ] Baca `progress.md` untuk memahami status terakhir.
 - [ ] Buat atau perbarui `papan-proyek.md` untuk siklus berikutnya.
 - [ ] **Definisikan Tujuan:** Tulis tujuan yang jelas untuk *baby-step* saat ini.
