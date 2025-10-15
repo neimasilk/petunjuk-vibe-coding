@@ -1,8 +1,8 @@
-# Vibe Coding - Metodologi Kolaborasi Manusia & AI
+# Vibe Coding
 
-**Filosofi pengembangan perangkat lunak di mana Manusia dan AI bekerja sebagai tim hibrida yang setara.**
+**Metodologi kolaborasi manusia dan AI yang sederhana.**
 
-V2.0: Konsep Fokus - Tanpa Kompleksitas Script
+V2.0: Benar-benar Simple
 
 ---
 
@@ -10,38 +10,11 @@ V2.0: Konsep Fokus - Tanpa Kompleksitas Script
 
 **Vibe Coding adalah tentang kolaborasi, bukan otomasi.**
 
-### Visualisasi Konsep
-```mermaid
-mindmap
-  root((Vibe Coding))
-    Tim Hibrida
-      Manusia
-      AI
-      Kolaborasi Setara
-    Baby-Step Workflow
-      Pecah Tugas Kecil
-      30-60 Menit
-      Iteratif
-    Memory Bank
-      Dokumentasi Pusat
-      Single Source Truth
-      Update Real-time
-    Assignee System
-      Tanggung Jawab Jelas
-      Personal Ownership
-      Yang Kerja, Yang Commit
-    Manual Control
-      User Control Penuh
-      Simple Over Complex
-      Prinsip Manual
-```
-
 ### Prinsip Dasar
-- **Tim Hibrida**: Manusia dan AI sebagai rekan setim yang setara
-- **Baby-Step Workflow**: Pecah pekerjaan menjadi unit kecil (30-60 menit)
-- **Memory Bank**: Dokumentasi terpusat untuk konteks proyek
-- **Assignee System**: Tanggung jawab jelas untuk setiap tugas
-- **Manual Control**: User control penuh, bukan otomasi berlebihan
+- **Tim Hibrida**: Manusia dan AI sebagai rekan setim
+- **Baby-Step**: Pecah kerja jadi unit kecil (30-60 menit)
+- **Memory Bank**: Dokumentasi terpusat
+- **Manual Control**: User control penuh, simple over complex
 
 ### Perubahan V2.0
 - ❌ **Hapus**: Script otomatisasi yang kompleks
